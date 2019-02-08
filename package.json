@@ -4,6 +4,7 @@
   "description": "Application to get a quote from a pre-existent datastore and send it somewhere",
   "main": "main.js",
   "scripts": {
+    "start": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
