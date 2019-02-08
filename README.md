@@ -1,0 +1,1 @@
+Quotes: https://github.com/JamesFT/Database-Quotes-JSON/blob/master/quotes.json
