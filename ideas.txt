@@ -1,0 +1,2 @@
+Web frontend which shows a carousel of quotes, gets pictures of wikipedia, provides description of author.
+Web frontend form to 'subscribe' to quotes of people
