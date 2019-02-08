@@ -1,5 +1,6 @@
 const quotes = require("./quotes.json");
 const quotesArray = Object.keys(quotes).map(i => quotes[i]);
+let quoteOfTheDay;
 const generateQuote = () => {
     let randomQuote = quotesArray[Math.floor(Math.random()*quotesArray.length)]
     quoteOfTheDay = randomQuote;
