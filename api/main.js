@@ -8,4 +8,9 @@ app.get('/', (req, res) => {
     res.send(`${quote.text} - ${quote.author} - ${quote.lifespan}`)
   })
 });
+
+app.get('/quote', (req, res) => {
+  quoteOfTheDay.then(quote => res.send(quote));
+})
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
