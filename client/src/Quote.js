@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Container from 'react-bootstrap/Container';
 import Text from './Text';
 class Quote extends React.Component {
   
@@ -33,8 +34,8 @@ class Quote extends React.Component {
       )
   }
 
-  renderText(text) {
-    return <Text text={text} />;
+  renderText(quote) {
+    return <Text text={quote.text} author={quote.author} lifespan={quote.lifespan}/>;
   }
 
   render() {
@@ -45,11 +46,13 @@ class Quote extends React.Component {
       return <div>Loading...</div>;
     } else {
       return (
-        <div>
-          <div className="quote">
-            {this.renderText(quote.text)}
+        <Container>
+          <div>
+            <div className="quote">
+              {this.renderText(quote)}
+            </div>
           </div>
-        </div>
+        </Container>
       );
     }
   }
