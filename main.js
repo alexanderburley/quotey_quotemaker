@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 
 const port = process.env.PORT || 3001
 const express = require('express')

@@ -1,2 +1,2 @@
-cd ./client && npm start &
-cd ./api && npm start
+npm start &
+cd ./client && npm start
