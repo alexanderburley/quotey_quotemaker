@@ -41,9 +41,9 @@ class Quote extends React.Component {
   render() {
     const { error, isLoaded, quote } = this.state;
     if (error) {
-      return <div>Error: {error.message}</div>;
+      return <div className="quote">Error: {error.message}</div>;
     } else if (!isLoaded) {
-      return <div>Loading...</div>;
+      return <div className="quote">Loading...</div>;
     } else {
       return (
         <Container>
