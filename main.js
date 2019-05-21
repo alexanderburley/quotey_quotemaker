@@ -6,12 +6,13 @@ const express = require('express')
 const app = express()
 const quoteOfTheDay = require('./lib/quoteBuilder.js').getQuoteOfTheDay();
 
-//Static file declaration
-app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.get('/quote', (req, res) => {
   quoteOfTheDay.then(quote => res.send(quote));
 })
+
+//Static file declaration
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 //production mode
 if(process.env.NODE_ENV === 'production') {
