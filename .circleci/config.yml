@@ -2,7 +2,7 @@ version: 2.1
 orbs:
   node: circleci/node@3.0.0
 jobs:
-  build:
+  deploy:
     machine:
       image: ubuntu-1604:202004-01
     steps:
@@ -12,4 +12,4 @@ workflows:
   node-tests:
     jobs:
       - node/test
-      - build
+      - deploy
