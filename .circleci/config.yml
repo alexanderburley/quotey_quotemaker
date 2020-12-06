@@ -1,15 +1,7 @@
 version: 2.1
 orbs:
   node: circleci/node@3.0.0
-jobs:
-  deploy:
-    machine:
-      image: ubuntu-1604:202004-01
-    steps:
-      - checkout
-      - run: git push heroku master
 workflows:
   node-tests:
     jobs:
       - node/test
-      - deploy
