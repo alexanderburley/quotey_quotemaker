@@ -5,11 +5,13 @@
   "main": "main.js",
   "scripts": {
     "start": "node main.js",
-    "test": "mocha --recursive ./**/*.spec.js ",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "test": "mocha --recursive ./**/*.spec.js "
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "12.x"
+  },
   "dependencies": {
     "express": "^4.16.4",
     "wikijs": "^6.0.1"
